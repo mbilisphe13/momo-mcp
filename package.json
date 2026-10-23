@@ -5,15 +5,15 @@
   "type": "module",
   "license": "MIT",
   "author": "Siphesihle Mbili",
-  "homepage": "https://github.com/zerotaldev/momo-mcp#readme",
+  "homepage": "https://github.com/mbilisphe13/momo-mcp#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zerotaldev/momo-mcp.git"
+    "url": "git+https://github.com/mbilisphe13/momo-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/zerotaldev/momo-mcp/issues"
+    "url": "https://github.com/mbilisphe13/momo-mcp/issues"
   },
-  "mcpName": "io.github.zerotaldev/momo",
+  "mcpName": "io.github.mbilisphe13/momo",
   "bin": {
     "momo-mcp": "src/index.mjs"
   },

@@ -1,11 +1,14 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.zerotaldev/momo",
+  "name": "io.github.mbilisphe13/momo",
   "title": "MTN Mobile Money",
   "description": "Request and track MTN Mobile Money payments across Africa. Sandbox-locked by default.",
   "version": "0.1.0",
-  "websiteUrl": "https://github.com/zerotaldev/momo-mcp",
-  "repository": { "url": "https://github.com/zerotaldev/momo-mcp", "source": "github" },
+  "websiteUrl": "https://github.com/mbilisphe13/momo-mcp",
+  "repository": {
+    "url": "https://github.com/mbilisphe13/momo-mcp",
+    "source": "github"
+  },
   "packages": [
     {
       "registryType": "npm",
@@ -13,16 +16,67 @@
       "identifier": "momo-mcp",
       "version": "0.1.0",
       "runtimeHint": "npx",
-      "transport": { "type": "stdio" },
+      "transport": {
+        "type": "stdio"
+      },
       "environmentVariables": [
-        { "name": "MOMO_SUBSCRIPTION_KEY", "description": "Product subscription key from momodeveloper.mtn.com", "isRequired": true, "isSecret": true },
-        { "name": "MOMO_API_USER", "description": "API user UUID. In the sandbox, momo_provision_sandbox_user creates one.", "isRequired": false, "isSecret": true },
-        { "name": "MOMO_API_KEY", "description": "API key paired with the API user", "isRequired": false, "isSecret": true },
-        { "name": "MOMO_TARGET_ENVIRONMENT", "description": "sandbox, or a production country such as mtnghana. The host is derived from this.", "isRequired": false, "isSecret": false, "default": "sandbox" },
-        { "name": "MOMO_ALLOW_PRODUCTION", "description": "Required with a production target. Must be 'i-understand-this-moves-real-money'.", "isRequired": false, "isSecret": false },
-        { "name": "MOMO_PRODUCT", "description": "Which MoMo product the subscription key is for", "isRequired": false, "isSecret": false, "default": "collection", "choices": ["collection", "disbursement", "remittance"] },
-        { "name": "MOMO_CURRENCY", "description": "Currency. The sandbox only settles in EUR.", "isRequired": false, "isSecret": false, "default": "EUR" },
-        { "name": "MOMO_MAX_AMOUNT", "description": "Ceiling on a single payment request, in major units", "isRequired": false, "isSecret": false, "default": "1000" }
+        {
+          "name": "MOMO_SUBSCRIPTION_KEY",
+          "description": "Product subscription key from momodeveloper.mtn.com",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "MOMO_API_USER",
+          "description": "API user UUID. In the sandbox, momo_provision_sandbox_user creates one.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "MOMO_API_KEY",
+          "description": "API key paired with the API user",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "MOMO_TARGET_ENVIRONMENT",
+          "description": "sandbox, or a production country such as mtnghana. The host is derived from this.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "sandbox"
+        },
+        {
+          "name": "MOMO_ALLOW_PRODUCTION",
+          "description": "Required with a production target. Must be 'i-understand-this-moves-real-money'.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "MOMO_PRODUCT",
+          "description": "Which MoMo product the subscription key is for",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "collection",
+          "choices": [
+            "collection",
+            "disbursement",
+            "remittance"
+          ]
+        },
+        {
+          "name": "MOMO_CURRENCY",
+          "description": "Currency. The sandbox only settles in EUR.",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "EUR"
+        },
+        {
+          "name": "MOMO_MAX_AMOUNT",
+          "description": "Ceiling on a single payment request, in major units",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "1000"
+        }
       ]
     }
   ]
