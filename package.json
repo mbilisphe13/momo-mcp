@@ -1,0 +1,49 @@
+{
+  "name": "momo-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the MTN Mobile Money API. Sandbox-locked by default.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Siphesihle Mbili",
+  "homepage": "https://github.com/zerotaldev/momo-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerotaldev/momo-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zerotaldev/momo-mcp/issues"
+  },
+  "mcpName": "io.github.zerotaldev/momo",
+  "bin": {
+    "momo-mcp": "src/index.mjs"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "scripts": {
+    "start": "node src/index.mjs",
+    "check": "node src/preflight.mjs",
+    "test": "node --test src/*.test.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "mcp-server",
+    "mtn",
+    "momo",
+    "mobile-money",
+    "africa",
+    "payments",
+    "fintech"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  }
+}
