@@ -1,5 +1,7 @@
 # momo-mcp
 
+[![test](https://github.com/mbilisphe13/momo-mcp/actions/workflows/test.yml/badge.svg)](https://github.com/mbilisphe13/momo-mcp/actions/workflows/test.yml)
+
 An MCP server for [MTN Mobile Money](https://momodeveloper.mtn.com) — the
 largest mobile money network in Africa, with around 72 million active users
 across 16 countries. It lets an AI assistant request payments, check account
